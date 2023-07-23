@@ -3,6 +3,7 @@ import { useState } from "react";
 const App = () => {
   const [todos, setTodos] = useState([]);
   const [currentTodo, setCurrentTodo] = useState("");
+  const [alert, setAlert] = useState(false);
 
   const handleTodoChange = (e) => {
     setCurrentTodo(e.target.value);
@@ -12,6 +13,8 @@ const App = () => {
     if (currentTodo.trim() !== "") {
       setTodos([...todos, { text: currentTodo, done: false }]);
       setCurrentTodo("");
+    } else {
+      setAlert(true);
     }
   };
 
@@ -32,10 +35,13 @@ const App = () => {
           value={currentTodo}
           onChange={handleTodoChange}
         />
-        <button className="ms-3 btn btn-primary w-50" onClick={handleAddTodo}>
+        <button className="ms-3 btn btn-primary" onClick={handleAddTodo}>
           Add todo
         </button>
       </div>
+      {alert && (
+        <p className="alert alert-danger mt-2">Please write your todo.</p>
+      )}
       <ul className="list-group mt-3 w-100">
         {todos.map((todo, idx) => (
           <li

@@ -8,3 +8,7 @@
   text-decoration: line-through;
   color: gray;
 }
+
+button {
+  width: 7rem;
+}
