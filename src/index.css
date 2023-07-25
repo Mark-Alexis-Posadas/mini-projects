@@ -17,20 +17,17 @@ ul {
   list-style: none;
   padding: 0;
   display: flex;
+  align-items: center;
 }
 
 li {
   padding: 10px 20px;
   cursor: pointer;
-  border: 1px solid #ccc;
+
   margin-right: 5px;
 }
 
-li.active {
-  background-color: #f0f0f0;
-}
-
 div {
-  border: 1px solid #ccc;
   padding: 20px;
+  background-color: #fafafa;
 }

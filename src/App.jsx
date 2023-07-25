@@ -1,9 +1,9 @@
-import Tab from "./components/tab/Tab";
+import ToggleContent from "./components/toggle/ToggleContent";
 
 const App = () => {
   return (
     <>
-      <Tab />
+      <ToggleContent />
     </>
   );
 };

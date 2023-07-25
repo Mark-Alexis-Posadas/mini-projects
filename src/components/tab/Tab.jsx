@@ -7,6 +7,7 @@ const Tab = () => {
   const handleClick = (idx) => {
     setActiveTab(idx);
   };
+
   return (
     <>
       <ul>
@@ -15,7 +16,7 @@ const Tab = () => {
             <li
               key={idx}
               onClick={() => handleClick(idx)}
-              className={activeTab === idx ? "active" : ""}
+              className={activeTab === idx ? "btn btn-primary" : ""}
             >
               {tab.title}
             </li>
