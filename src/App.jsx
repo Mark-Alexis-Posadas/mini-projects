@@ -1,9 +1,9 @@
-import Todo from "./components/simple-todo-app/UseReducer/Todo";
+import Tab from "./components/tab/Tab";
 
 const App = () => {
   return (
     <>
-      <Todo />
+      <Tab />
     </>
   );
 };
