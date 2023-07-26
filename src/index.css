@@ -31,3 +31,17 @@ div {
   padding: 20px;
   background-color: #fafafa;
 }
+
+.theme.light {
+  background-color: #fff;
+}
+
+.theme.dark {
+  background-color: #222;
+}
+
+.card img {
+  width: 9rem;
+  height: 9rem;
+  object-fit: contain;
+}

@@ -1,9 +1,9 @@
-import ToggleContent from "./components/toggle/ToggleContent";
+import FetchApi from "./components/fetch-api/FetchApi";
 
 const App = () => {
   return (
     <>
-      <ToggleContent />
+      <FetchApi />
     </>
   );
 };
