@@ -1,20 +1,17 @@
+import React from "react";
 import axios from "axios";
-import { useEffect, useState } from "react";
-
 const apiData = "https://fakestoreapi.com/products";
 const FetchApi = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = React.useState([]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     axios.get(apiData).then((response) => {
       setData(response.data);
     });
   }, []);
 
-  if (!data) return null;
-
   return (
-    <div className="d-flex flex-wrap">
+    <div className="row">
       {data.map((d) => {
         const { id, title, description, image } = d;
         return (

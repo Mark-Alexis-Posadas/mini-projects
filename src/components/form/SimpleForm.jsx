@@ -1,7 +1,7 @@
-import { useState } from "react";
+import React from "react";
 
 const SimpleForm = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = React.useState({
     firstName: "",
     lastName: "",
   });
@@ -18,7 +18,6 @@ const SimpleForm = () => {
     e.preventDefault();
     alert(`First Name: ${formData.firstName}\nLast Name: ${formData.lastName}`);
   };
-
   return (
     <form onSubmit={handleSubmit}>
       <h1>Simple Form</h1>

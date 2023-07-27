@@ -1,9 +1,9 @@
-import FetchApi from "./components/fetch-api/FetchApi";
+import Pagination from "./components/pagination/pagination";
 
 const App = () => {
   return (
     <>
-      <FetchApi />
+      <Pagination />
     </>
   );
 };
