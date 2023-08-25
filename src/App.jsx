@@ -1,9 +1,9 @@
-import Pagination from "./components/pagination/pagination";
+import Nav from "./components/clone/youtube/Nav";
 
 const App = () => {
   return (
     <>
-      <Pagination />
+      <Nav />
     </>
   );
 };
