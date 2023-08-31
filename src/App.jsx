@@ -1,9 +1,9 @@
-import Nav from "./components/clone/youtube/Nav";
+import ToggleColorObjects from "./components/toggle/ToggleColorObjects";
 
 const App = () => {
   return (
     <>
-      <Nav />
+      <ToggleColorObjects />
     </>
   );
 };
