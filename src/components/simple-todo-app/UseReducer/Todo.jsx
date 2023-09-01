@@ -62,7 +62,7 @@ const Todo = () => {
       <ul className="list-group mt-3 w-100">
         {todos.map((todo, idx) => (
           <li
-            className={`list-group-item ${
+            className={`list-group-item w-100 ${
               todo.done ? "done" : ""
             } d-flex align-items-center justify-content-between`}
             key={idx}

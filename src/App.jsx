@@ -1,10 +1,10 @@
-import ToggleColorObjects from "./components/toggle/ToggleColorObjects";
+import RandomNumber from "./components/random/RandomNumber";
 
 const App = () => {
   return (
-    <>
-      <ToggleColorObjects />
-    </>
+    <div>
+      <RandomNumber />
+    </div>
   );
 };
 

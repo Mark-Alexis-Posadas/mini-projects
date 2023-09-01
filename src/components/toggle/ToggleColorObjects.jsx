@@ -11,8 +11,15 @@ const reducerFunction = (state, action) => {
 };
 const ToggleColorObjects = () => {
   const [state, dispatch] = useReducer(reducerFunction, initialState);
+
   return (
-    <div className={state.text === "Light" ? "theme dark" : "theme light"}>
+    <div
+      className={
+        state.text === "Light"
+          ? "theme d-flex align-items-center justify-content-center min-vh-100 dark"
+          : "theme d-flex align-items-center justify-content-center min-vh-100 light"
+      }
+    >
       <button
         className={state.text === "Light" ? "btn btn-light" : "btn btn-dark"}
         onClick={() => dispatch({ type: "CHANGE_COLOR" })}
