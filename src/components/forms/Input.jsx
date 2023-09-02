@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const Input = () => {
   const [inputValue, setInputValue] = useState("");
   const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    const storeTodos = JSON.parse(localStorage.getItem("todos"));
+    if (storeTodos) {
+      setTodos(storeTodos);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
@@ -26,7 +37,7 @@ export const Input = () => {
   };
 
   return (
-    <>
+    <div className="container p-5">
       <input
         type="text"
         className="form-control"
@@ -55,6 +66,6 @@ export const Input = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };

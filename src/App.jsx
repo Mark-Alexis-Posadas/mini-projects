@@ -1,9 +1,9 @@
-import RandomNumber from "./components/random/RandomNumber";
+import AccordionReducer from "./components/accordion/AccordionReducer";
 
 const App = () => {
   return (
     <div>
-      <RandomNumber />
+      <AccordionReducer />
     </div>
   );
 };
