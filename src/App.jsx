@@ -1,9 +1,9 @@
-import AccordionReducer from "./components/accordion/AccordionReducer";
+import Store from "./components/ecommerce/Store";
 
 const App = () => {
   return (
-    <div>
-      <AccordionReducer />
+    <div className="container">
+      <Store />
     </div>
   );
 };
